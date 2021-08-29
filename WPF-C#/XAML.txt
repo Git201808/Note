@@ -1,0 +1,51 @@
+﻿C# 笔记
+
+XAML三个顶级元素：
+Window
+UserControl-用户控件，布局的时候像窗体那样布局就可以了。
+Page把窗他以网页的形式展现。
+
+Window窗体属性
+1.窗口的外观
+  外观属性：Icon 、 Title 、 WindowStyle 、 ResizeMode
+Icon 指定窗口的图标
+Title 指定窗口的标题
+WindowStyle 指定窗口样式
+属性值为
+	None 无边框
+	SingleBorderWindow 单边框【默认值】
+	ThreeDBorderWindow 3D边框
+	ToolWindow 工具箱窗口
+
+2.窗口的位置
+属性	WindowStarupLocation 指定窗口初始位置
+属性值	三个值
+		Manual 手工指定位置
+		CenterScreen 屏幕中央
+		CenterOwner 父窗体中央
+		
+
+3.窗口的大小
+尺寸属性： Width 、Height
+最大、最小宽度，最大、最小高度 实际宽度、高度
+SizeToContent 窗口的大小有内容决定
+四个值
+Manual 手工
+Width 窗体宽度有内容决定，内容有多宽，窗体就有多宽
+Height 窗体高度由内容决定，内容有多高，窗体就有多高
+WidthAndHeight 窗体大小有内容决定，相当于上面两个属性的整合
+
+4.窗口的可见行性和状态
+属性		属性值		描述
+Visibility		Visible		可见
+		Hidden		隐藏，有掩耳盗铃的意思，只隐藏占内存空间
+		Collapsed		折叠，有真的隐藏，不占空间跟内存
+ShowlnTasker	true		任务窗口图标隐藏
+		Hide		不但隐藏窗口本身，同时隐藏任务栏图标
+WindowState	Normal		正常
+		Maximized	最大化
+		Minimized	最小化
+
+RestoreBounds 获取窗口在最大化之前的大小和位置，四个枚举值 上左 宽高
+
+5.窗口的生命周期

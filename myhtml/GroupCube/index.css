@@ -1,0 +1,231 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.warp{
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* overflow:hidden;这个属性也能清除，浮动导致的高度塌陷 */
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+/* -------------------第一部分------------------ */
+.class_one{
+    border-top: 2px solid #f67c2b;
+}
+.tl_box{
+    width: 280px;
+    height: 26px;
+    background-color: #f67c2b;
+    float: right;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+}
+/* 结构选择器，父子选择器 */
+.tl_box a{
+    color: white;
+    text-decoration: none;/*去a标签下的下划线*/
+}
+.tl_box i{
+    /* i是行内元素，改成块级元素 */
+    /* 块级所占的是一行，i把文字挤到下面去了 */
+    display: block;
+    width: 18px;
+    height: 26px;
+    background: url(./images/top_bg.jpg);
+}
+/* 结构选择器 */
+.tl_box i:first-child{  
+    float: left;
+}
+.tl_box i:nth-child(2){
+    float: right;
+    background-position: 0px 26px;
+}
+/* -------------------第二部分------------------ */
+
+
+.logo_box{
+    width: 172px;
+    height: 75px;
+    background-image: url(./images/tlf_logo.png);
+}
+/* 一般来说，新的作法就是，新建一个类，清除浮动效果导致的高度塌陷 */
+/* 给父级元素设置 clear：both; */
+/* .class_two{
+    clear: both;
+} */
+
+.logo_box a{
+    display: block;
+    height: 100%;
+}
+.line{
+    display: block;
+    width: 1px;
+    height: 65px;
+    background-color: #ddd;
+    margin: 15px 15px 0 15px;
+}
+
+/* 城市切换 */
+.select_City{
+    width: 80px;
+    height: 48px;
+    /* background-color: #900; */
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #f67c2b;
+}
+.select_City a{
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+/* 宣传口号 */
+.rhesis{
+    /* display: block; */
+    width: 350px;
+    height: 30px;
+    background: url(./images/rhesis.png) 0 -1px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+/* 服务热线 */
+.sevser{
+    width: 220px;
+    height: 38px;
+    background: url(./images/tel.png);
+    color: #f67c2b;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 36px;
+    padding-left: 54px;
+}
+
+/* 广告部分 */
+.ad img{
+    padding: 10px;
+}
+
+/* ------------------第三部分-导航部分----------------- */
+.class_three{
+    width: 100%;
+    height: 45px;
+    background: #f67c2b;
+}
+.nav ul li{
+    float: left;
+    list-style: none;
+    width: 95px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+.nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.nav ul li i{
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #ddd;
+    
+    position: absolute;
+    top: 13px;
+    left: 0px;
+}
+.on {
+    background: #e64b16;
+     
+}
+.nav ul li:hover{
+    background: #e64b16;
+
+}
+
+/* 我要求购部分 */
+/* .nav .warp>div直接子选择器 */
+/* .nav .wyqg{
+    width: 95px;
+    height: 45px;
+
+} */
+.nav>div{
+    width: 92px;
+    height: 28px;
+    background-color: #900;
+    margin: 10px 10px 0 0;
+
+}
+.nav .uqdk{
+    background: url(./images/daikuan.png) -1px 0px;
+}
+.nav .wyqg{
+    background: url(./images/qiugou.png) -1px 0px;
+}
+
+
+/* -----------轮播部分--样式---------- */
+.content_frist{
+    height: 300px;
+    /* background: red; */
+
+}
+.left_div{
+    width: 670px;
+    height: 100%;
+ 
+    /* background: #0f0; */
+  
+}
+.right_div{
+    width: 300px;
+    height: 100%;
+ 
+    /* background: #023145; */
+}
+
+/* 内容区--样式 */
+.container{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container .img_list{
+    width: 4690px;
+    height: 100%;
+    position: absolute; 
+    top: 0px; 
+  
+}
+.container .img_list img{
+    width: 670px;
+    height: 300px;
+    float: left;
+
+}

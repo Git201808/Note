@@ -1,0 +1,112 @@
+/* common-star */
+body{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 12px "微软雅黑"
+}
+a{
+    text-decoration: none;
+}
+ul,li,ol{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+/* common-end */
+
+/* nav-star */
+.nav_box{
+    width: 1024px;
+    margin: 0 auto;
+}
+.nav0{
+    width: 1024px;
+    font-size: 13px;
+    float: right;
+}
+.nav0 li{
+    display: block;
+    font-size: 13px;
+    float: left;
+}
+.nav0 i{
+    display: block;
+    width: 1px;
+    height: 13px;;
+    color: black;
+}
+.nav1{
+    margin: 5px 0;
+    
+}
+.nav1_o{
+    width: 240px;
+    height: 40px;
+    color: red;
+    float: left;
+    background:url(./images/headfoot.png)0 0 no-repeat;
+}
+.nav1_o a{
+    float: left;
+    height: 40px;
+    width: 196px;
+    overflow: hidden;
+    text-indent: -999em;
+}
+.nav1_t{
+    float: right;
+    font-size: 13px;
+}
+.content{
+    background: #008acd;
+    clear: both;
+}
+.H{
+    width:1024px;
+    margin: 0 auto;
+}
+.nav2_o{
+    width: 1024px;
+    margin:5px 0px;
+    position: relative;
+    background: chocolate;
+}
+/* .nav2_o ul:first-child{
+   
+} */
+/* .nav2_o ul:nth-child(2){
+    float: right;
+} */
+.nav2_o li{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.nav2_o li a{
+    color: #fff;
+    /* display: block; */
+}
+.nav2_0 ul>li:hover{
+    border-bottom-color: #fff;
+}
+
+/* nav-end */
+
+/* content-star */
+
+
+
+/* content-end */
